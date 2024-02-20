@@ -1,8 +1,8 @@
 num1 = int(input("Enter A: "))
 num2 = int(input("Enter B: "))
-choice = ''
+choice = None
 
-while len(choice) == 0:
+while not choice:
     choice = input('Enter choice(+, -, /, *) or q to exit: ')
 
 if choice == '+':

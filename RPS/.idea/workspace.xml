@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d67e5d-51ab-4558-90db-0e065aba3ac9" name="Changes" comment="">
+    <list default="true" id="4224e240-002a-49cc-8a2e-a7c989123119" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../calculator/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../calculator/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stringMethods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stringMethods/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../timer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../timer/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,22 +24,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2cdHaHjUlWv9kQ44fLOOUjbuXMy" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2cljLaI3kGR0MvK90TSBoB1noMq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -49,11 +50,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73d67e5d-51ab-4558-90db-0e065aba3ac9" name="Changes" comment="" />
-      <created>1708434597075</created>
+      <changelist id="4224e240-002a-49cc-8a2e-a7c989123119" name="Changes" comment="" />
+      <created>1708693004223</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708434597075</updated>
+      <updated>1708693004223</updated>
     </task>
     <servers />
   </component>

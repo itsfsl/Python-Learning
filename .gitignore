@@ -1,3 +1,4 @@
-# git ignore file to ignore the practice folder
+# git ignore file to ignore certain folder
 
 /practice
+/.venv

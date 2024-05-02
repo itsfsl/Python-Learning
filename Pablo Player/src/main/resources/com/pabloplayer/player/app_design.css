@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.root {
+    -fx-background-color: #F5F5F5;
+    -fx-background-radius: 60px;
+}
+
+/* Styling for the progress bar */
+.progress-bar {
+    -fx-background-color: #ededed; /* Background color of the progress bar */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-background-radius: 5px; /* Background radius */
+}
+
+.progress-bar .track {
+    -fx-background-color: transparent; /* Color of the track */
+}
+
+.progress-bar .bar {
+    -fx-background-color: #CE326B; /* Color of the progress */
+    -fx-background-insets: 0, 0 0 1 0; /* Inner shadow */
+    -fx-padding: 0; /* Padding */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-background-radius: 5px; /* Background radius */
+    -fx-height: 2px; /* Height of the progress bar (very thin) */
+}

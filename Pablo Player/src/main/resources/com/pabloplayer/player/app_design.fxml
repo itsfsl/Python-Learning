@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pabloplayer.player.Controller">
+   <children>
+      <ImageView id="album_art_image" fx:id="album_art_image_blurred" fitHeight="630.0" fitWidth="663.0" focusTraversable="true" layoutX="-155.0" layoutY="-40.0" pickOnBounds="true" AnchorPane.bottomAnchor="-40.0" AnchorPane.topAnchor="-40.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <GaussianBlur radius="63.0" />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff80" height="38.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000005c" height="512.0" layoutY="38.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" width="350.0" />
+      <ProgressBar id="progress_bar" fx:id="progress_bar" layoutX="30.0" layoutY="418.0" prefHeight="5.0" prefWidth="290.0" progress="0.22" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+      <Label id="title_label" fx:id="title_label" alignment="CENTER" layoutX="42.0" layoutY="336.0" prefHeight="35.0" prefWidth="308.0" text="Song Title" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0">
+         <font>
+            <Font name="SF Pro Text Bold" size="27.0" />
+         </font></Label>
+      <Label id="artist_label" fx:id="artist_label" alignment="CENTER" layoutY="379.0" prefHeight="17.0" prefWidth="350.0" text="Artist Name" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="38.0">
+         <font>
+            <Font name="SF Pro Text Regular" size="15.0" />
+         </font></Label>
+      <Label id="time_elapsed_label" fx:id="time_elapsed_label" layoutX="30.0" layoutY="430.0" text="00:00" textFill="WHITE" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="SF Pro" size="10.0" />
+         </font></Label>
+      <Label id="total_time_label" fx:id="total_time_label" layoutX="293.0" layoutY="430.0" text="00:00" textFill="WHITE" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="SF Pro" size="10.0" />
+         </font></Label>
+      <ImageView id="shuffle_button" fx:id="shuffle_button" fitHeight="12.0" layoutX="31.0" layoutY="470.0" onMouseClicked="#shuffle_songs" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0">
+         <image>
+            <Image url="@../../../assets/icons/shuffle_button_white.png" />
+         </image>
+      </ImageView>
+      <ImageView id="repeat_button" fx:id="repeat_button" fitHeight="12.0" layoutX="307.0" layoutY="470.0" onMouseClicked="#repeat_songs" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="30.0">
+         <image>
+            <Image url="@../../../assets/icons/repeat_button_white.png" />
+         </image>
+      </ImageView>
+      <ImageView id="album_art_image" fx:id="album_art_image" fitHeight="273.0" fitWidth="273.0" focusTraversable="true" layoutX="38.0" layoutY="55.0" pickOnBounds="true" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="39.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="87.42" offsetY="10.0" radius="42.8525" width="85.99">
+               <color>
+                  <Color opacity="0.26819923520088196" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+      <ImageView fx:id="prev_button" fitHeight="12.0" layoutX="125.0" layoutY="470.0" onMouseClicked="#prev_song" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="100.0">
+         <image>
+            <Image url="@../../../assets/icons/prev_button_white.png" />
+         </image></ImageView>
+      <ImageView fx:id="next_button" fitHeight="12.0" layoutX="217.0" layoutY="470.0" onMouseClicked="#next_song" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="100.0">
+         <image>
+            <Image url="@../../../assets/icons/next_button_white.png" />
+         </image>
+      </ImageView>
+      <Label id="app_name" fx:id="app_name" alignment="CENTER" layoutY="2.0" prefHeight="38.0" prefWidth="350.0" text="Pablo Player" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="SF Pro Text Black" size="15.0" />
+         </font>
+      </Label>
+      <Circle id="minimize_button" fx:id="close_button" fill="#e82300" layoutX="327.0" layoutY="20.0" onMouseClicked="#exit_window" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="18.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Circle>
+      <Circle id="close_button" fx:id="minimize_button" fill="#0575ab" layoutX="305.0" layoutY="20.0" onMouseClicked="#minimize_window" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="40.0" />
+      <ImageView id="app_logo" fx:id="play_pause_button" fitHeight="57.0" fitWidth="150.0" layoutX="146.0" layoutY="448.0" onMouseClicked="#play_pause_song" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="147.0">
+         <image>
+            <Image url="@../../../assets/icons/play_button_white.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
